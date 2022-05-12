@@ -14,6 +14,11 @@ btn.addEventListener("click", () => {
     while (n>100){
         n =   prompt("Please enter a value less than 100");
     }
+    if(n === null || n === ''){
+        n = 16;
+        clearGrid();
+        setGrid();
+    }
     clearGrid();
     setGrid();
 });
